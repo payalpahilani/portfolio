@@ -4713,3 +4713,22 @@ td:last-child {
   .percentage-93 { width: 93%; }
   .percentage-87 { width: 87%; }
   
+/* drivequest css */
+  .image-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 16px; 
+  }
+  
+  .image-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px; 
+  }
+  
+  .image-row img {
+	max-width: 100%;
+	height: auto;
+	display: block; 
+  }
+  
