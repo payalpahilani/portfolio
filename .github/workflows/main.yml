@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
@@ -20,5 +17,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  
+          personal_token: ${{ secrets.GH_PAT }}  # Use your PAT here
+          publish_dir: ./  # Change if index.html is inside a subfolder
+          destination_branch: gh-pages
