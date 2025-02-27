@@ -4657,14 +4657,20 @@ td:last-child {
 
 
 .skills-container {
-	font-family: Arial, sans-serif;
-	max-width: 600px; /* Adjust to fit the container width */
-	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* two equal columns */
+	gap: 1rem; /* gap between items */
+	margin-top: 2rem; /* adds space below the header text */
+	width: 100%;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
   }
   
   .skill {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	margin: 10px 0;
   }
   
@@ -4712,6 +4718,8 @@ td:last-child {
   .percentage-90 { width: 90%; }
   .percentage-93 { width: 93%; }
   .percentage-87 { width: 87%; }
+
+  
   
 /* drivequest css */
   .image-gallery {
